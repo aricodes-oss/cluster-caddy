@@ -1,6 +1,10 @@
 FROM caddy:builder as build
 
-RUN xcaddy build --with github.com/caddy-dns/cloudflare --with github.com/mholt/caddy-dynamicdns --with github.com/lucaslorentz/caddy-docker-proxy/v2
+RUN xcaddy build \
+  --with github.com/caddy-dns/cloudflare \
+  --with github.com/mholt/caddy-dynamicdns \
+  --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
+  --with github.com/caddyserver/cache-handler
 
 FROM caddy:latest
 
