@@ -5,7 +5,8 @@ RUN xcaddy build \
   --with github.com/mholt/caddy-dynamicdns \
   --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
   --with github.com/caddyserver/cache-handler \
-  --with github.com/mholt/caddy-ratelimit
+  --with github.com/mholt/caddy-ratelimit \
+  --with pkg.jsn.cam/caddy-defender
 
 FROM caddy:latest
 
