@@ -6,7 +6,8 @@ RUN xcaddy build \
   --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
   --with github.com/caddyserver/cache-handler \
   --with github.com/mholt/caddy-ratelimit \
-  --with pkg.jsn.cam/caddy-defender
+  --with pkg.jsn.cam/caddy-defender \
+  --with github.com/pberkel/caddy-storage-redis
 
 FROM caddy:latest
 
